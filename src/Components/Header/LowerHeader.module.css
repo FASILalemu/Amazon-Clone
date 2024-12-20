@@ -1,0 +1,30 @@
+.lower_container{
+    background-color: #085749;
+    color: white;
+}
+.lower_container ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.lower_container ul li{
+    padding: 8px;
+}
+.lower_container ul li:first-child{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+@media (max-width: 576px){
+    
+    
+    .lower_container ul li:not(:first-child){
+        display: none;
+    }
+}
+
+.lower_container ul li:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
