@@ -1,17 +1,17 @@
 import React from 'react';
 import Rating from "@mui/material/Rating";
 import CurrencyFormat from '../CurrencyFormat/CurrencyFormat';
-import './productCard.css'
-
-
+import './productCard.css';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
-    const {image, title, id, rating, price} = product;
+  const { image, title, id, rating, price } = product;
+
   return (
     <div className='card_container'>
-      <a href="#">
+      <Link to={`/products/${id}`}> {/* Corrected path to include a leading slash */}
         <img src={image} alt={title} />
-      </a>
+      </Link>
       <div>
         <h3>{title}</h3>
         <div className='rating'>
@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
           <CurrencyFormat amount={price} />
         </div>
         <button className='button'>
-            Add to Cart
+          Add to Cart
         </button>
       </div>
     </div>
