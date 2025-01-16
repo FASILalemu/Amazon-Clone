@@ -32,7 +32,7 @@ const Results = () => {
         <hr />
         {isLoading? (<Loader/>): (<div className="product_container">
           {results.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} renderAdd={true} renderDesc={false}/>
           ))}
         </div>)}
         

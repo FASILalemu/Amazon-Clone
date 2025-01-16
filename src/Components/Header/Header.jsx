@@ -86,7 +86,10 @@ import { DataContext } from "../DataProvider/DataProvider.jsx";
 const Header = () => {
   const { state = {}, dispatch } = useContext(DataContext); // Added fallback for state
   const { basket = [] } = state; // Fallback for basket
-  const basketCount = Array.isArray(basket) ? basket.length : 0;
+  // const basketCount = Array.isArray(basket) ? basket.length : 0;
+  const totalItem = basket?.reduce((amount,item)=>{
+    return item.amount + amount
+  },0)
 
   return (
     <section className={classes.fixed}>
@@ -134,7 +137,7 @@ const Header = () => {
           </Link>
           <Link to="/cart" className={classes.cart}>
             <BiCart size={35} />
-            <span>{basketCount}</span>
+            <span>{totalItem}</span>
           </Link>
         </div>
       </div>

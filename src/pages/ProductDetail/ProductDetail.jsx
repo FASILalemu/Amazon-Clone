@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../../Components/Layout/Layout';
+import Layout from '../../Components/Layout/LayOut';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { productUrl } from '../../Api/endPoints';
@@ -41,6 +41,7 @@ const ProductDetail = () => {
       product={product}
       flex={true}
       renderDesc={true}
+      renderAdd={true}
       
     />)}
       
