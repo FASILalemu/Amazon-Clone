@@ -22,10 +22,12 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+require('dotenv').config();
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC65uMAUn_9zT5yVPot5qLyli-AOSmiMGI",
+  apiKey: process.env.GOOGLE_API_KEY,
   authDomain: "clone-1f29c.firebaseapp.com",
   projectId: "clone-1f29c",
   storageBucket: "clone-1f29c.appspot.com", // Corrected storage bucket domain
