@@ -1,21 +1,22 @@
 export const catagoryInfo = [
+    
     {
-        title: "Shop gifts by recipient",
-        name:  "jewelery",
-        imgLink: "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HOL/GW/QuadCard/HS2/HOL24_4481_HS2_DQC_2-2_ShopbyRecipient_For-Her_Nov_1H_1x_186x116._SY116_CB543392481_.jpg",
-    },
-    {
-        title: "Gaming accessories",
+        title: "electronics",
         name:  "electronics",
-        imgLink: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg", 
+        imgLink: "https://m.media-amazon.com/images/I/71GUiamltWL.__AC_SX300_SY300_QL70_FMwebp_.jpg", 
     },
     {
-        title: "Shop for your home essentials",
-        name:  "home essentials",
-        imgLink: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg",    
+        title: "jewelery",
+        name:  "jewelery",
+        imgLink: "https://m.media-amazon.com/images/I/51JCwIZ+rfL._AC_UL320_.jpg",
     },
     {
-        title: "Delightful deals for everyone",
-        name:  "Delightful deals for everyone",
-        imgLink: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/HolidayDeals/Fuji_Holiday_deals_Dashboard_card_1X._SY304_CB540780866_.jpg"    }
+        title: "Crewneck Sweatshirt for Men",
+        name:  "men's clothing",
+        imgLink: "https://m.media-amazon.com/images/I/81D+bCgn8hL._AC_SX679_.jpg",    
+    },
+    {
+        title: "T-Shirt Hoodie for Women",
+        name:  "women's clothing",
+        imgLink: "https://m.media-amazon.com/images/I/71rV4j0MzbL._AC_UL320_.jpg"    }
 ];

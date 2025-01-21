@@ -51,13 +51,13 @@ function App() {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        console.log('User signed in:', authUser); // Add log to check
+        // console.log('User signed in:', authUser); // Add log to check
         dispatch({
           type: Type.SET_USER,
           user: authUser,
         });
       } else {
-        console.log('No user signed in'); // Add log to check
+        // console.log('No user signed in'); // Add log to check
         dispatch({
           type: Type.SET_USER,
           user: null,

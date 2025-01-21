@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: #efeeee;
+    padding: 30px;
+}
+.orders_container{
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+.orders_container h2{
+    border-bottom: 2px solid var(--primary-shade);
+    padding: 20px;
+
+}

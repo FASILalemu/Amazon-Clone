@@ -1,7 +1,22 @@
-.catagory_container{
+/* .catagory_container{
     position: relative;
     margin-top: -20%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     place-items: center;
-}
+    max-width: 1600px;
+} */
+
+.catagory_container {
+    position: relative;
+    margin-top: -20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
